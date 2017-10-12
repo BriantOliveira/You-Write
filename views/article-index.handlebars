@@ -1,0 +1,31 @@
+<h1>Article</h1>
+<a href="/article/new">New Article</a>
+<div class="row"></div>
+{{#each articles}}
+    <div class="row">
+        <!--<div class="input-field col s4 m6" style="width: 19.333333%; margin-left: 43px;">-->
+        <a href="/article/{{this._id}}"></a>
+        <h2>{{this.category}}</h2>
+        <!--<div class="row" id="articleName">-->
+        <!--<div class="input-field col s5" style="clear:both">-->
+        <h3><b>{{this.articleName}}</b></h3>
+        <div class="row">
+
+            <!--<div class="row">-->
+            <!--<div class="input-field col s5" style="clear:both">-->
+            <!--<i class="material-icons prefix">mode_edit</i>-->
+            <p>
+                <small>{{this.content}}</small>
+            </p>
+        </div>
+    </div>
+
+    <a href="/article/{{this._id}}/edit">Edit</a>
+
+{{/each}}
+
+{{#each article.comments}}
+    <p>
+        Comments:   {{article.content}}
+    </p>
+{{/each}}
