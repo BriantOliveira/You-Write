@@ -60,7 +60,8 @@ require('./controllers/usercontroller')(app);
 // Article Routes
 require('./controllers/articleController')(app);
 
-
+// Comment Routes
+require('./routes')(app);
 
 app.listen(port);
 console.log('You are connected to ' + port);

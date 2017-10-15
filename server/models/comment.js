@@ -4,6 +4,7 @@ Schema = mongoose.Schema;
 let CommentSchema = new Schema({
     createdAt   :{ type: Date }
     ,updatedAt  :{ type: Date }
+    ,_creator   :{ type: Schema.ObjectId, ref: 'User'}
     ,comments :{ type: String, required: true }
 });
 

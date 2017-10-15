@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const Comments = require('./comment');
 
 const ArticleSchema = new Schema({
     createdAt   :{ type: Date },
