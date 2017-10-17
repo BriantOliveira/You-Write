@@ -149,5 +149,6 @@ app.post('/login/now', function(req, res, next) {
 //     }
 // });
 
-app.listen(port);
-console.log('You are connected to ' + port);
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
