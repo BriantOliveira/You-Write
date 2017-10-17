@@ -1,18 +1,14 @@
 // Caling the mongoose dependencies
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 // Calling the encryption method
-var bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
-const { Schema } = mongoose;
+const Schema = mongoose.Schema;
 
 // Use Schema
 const UserSchema = new Schema ({
-    createdAt: {
-        type: Date
-    },
-    updatedAt: {
-        type: Date
-    },
+    createdAt: { type: Date },
+    updatedAt: { type: Date },
 
     first: {
         type: String,
@@ -62,5 +58,10 @@ UserSchema.pre('save', function (next) {
     });
 });
 
-const User = mongoose.model('User', UserSchema);
-module.exports = User;
+UserSchema.methods.comparePassword = function(password, done) {
+    bcrypt.compare(password, this.password, function(err, isMatch){
+        done(err, isMatch);
+    });
+};
+
+module.exports = mongoose.model('User', UserSchema);

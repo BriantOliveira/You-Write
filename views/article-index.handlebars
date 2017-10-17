@@ -1,31 +1,91 @@
-<h1>Article</h1>
-<a href="/article/new">New Article</a>
-<div class="row"></div>
-{{#each articles}}
-    <div class="row">
-        <!--<div class="input-field col s4 m6" style="width: 19.333333%; margin-left: 43px;">-->
-        <a href="/article/{{this._id}}"></a>
-        <h2>{{this.category}}</h2>
-        <!--<div class="row" id="articleName">-->
-        <!--<div class="input-field col s5" style="clear:both">-->
-        <h3><b>{{this.articleName}}</b></h3>
-        <div class="row">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-            <!--<div class="row">-->
-            <!--<div class="input-field col s5" style="clear:both">-->
-            <!--<i class="material-icons prefix">mode_edit</i>-->
-            <p>
-                <small>{{this.content}}</small>
-            </p>
+    <title>Discover U Write</title>
+
+    <!-- Stylesheet -->
+    <link href="http://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-materialize.min.css?3602604866228935180" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="n bi fj">
+    <div class="nav-wrapper" id="nav-wrapper">
+        <a href="/img/logo.png" class="brand-logo"><i class="material-icons">lightbulb_outline</i></a>
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+            <li class="active"><a class="dropdown-button" href="#" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true"><i class="material-icons ag" style="position: relative;
+    display: inline-block">filter_list</i></a></li>
+        </ul>
+
+        <ul  id="pages" class="dropdown-content">
+            <li><a class="login" href="/user">Sign Up Now!</a></li>
+            <li><a href="/login">Login</a></li>
+            <!--<li><a href="/article-show.handlebars">Explore more</a></li>-->
+            <li><a href="/article/new">Create Article</a></li>
+        </ul>
+
+        <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+    </div>
+</nav>
+<div class="ai full-height fh">
+    <div class="bz">
+        <img src="http://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/trees.jpg?3602604866228935180" alt="background-img">
+    </div>
+    <div class="horizontal-half-wrapper he g">
+        <div class="header-background l"></div>
+        <div class="header-wrapper c valign-wrapper">
+            <div class="d iv kw offset-m2 ci">
+                <img src="./img/logo.png" class="Logo" style="max-width: 700px; height: 300px;">
+                <h1>WELCOME!</h1>
+                <span class="dx">Home to unique ideas from the world’s smart minds. Hear directly from the people who know it best. From tech to politics to creativity and more — whatever your interest, we’ve got you covered.</span>
+                <button class="read-more"><i class="icon-caret-down"></i></button>
+            </div>
         </div>
     </div>
+    <div class="horizontal-half-wrapper">
+        <div class="header-background l"></div>
+        <div class="header-wrapper c valign-wrapper">
+            <div class="d iv kw offset-m2 ci">
+                <h1>U WRITE</h1>
+                <span class="dx"> is so easy to use that it’s hard to explain.</span>
+                <button class="read-more"><i class="icon-caret-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-half-wrapper he">
+        <div class="header-background l"></div>
+        <div class="header-wrapper c valign-wrapper">
+            <div class="d iv kw offset-m2 ci">
+                <h1>Think Create Explore</h1>
+                <span class="dx">Turns out that when you make it easy to create interesting things, that’s exactly what people do. All those great, random blogs your friends send you, those are U Write blogs. We’ll help you find and follow blogs like that, and we’ll help other people find and follow yours.</span>
+                <button class="read-more"><i class="icon-caret-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-half-wrapper">
+        <div class="header-background l"></div>
+        <div class="header-wrapper c valign-wrapper">
+            <div class="d iv kw offset-m2 ci">
+                <h1>START NOW!</h1>
+                <span class="dx"> Once you follow a blog, all of its posts show up in your dashboard, just like you’d expect. See something great? Reblog it to your own blog. Add commentary if you like. Make it your own. Other people will do the same to your posts. That’s how you meet people here.</span>
+                <button class="read-more" onclick="window.location.href='/user'"><i class="icon-caret-down"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <a href="/article/{{this._id}}/edit">Edit</a>
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="http://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?3602604866228935180" crossorigin="anonymous"></script>
 
-{{/each}}
-
-{{#each article.comments}}
-    <p>
-        Comments:   {{article.content}}
-    </p>
-{{/each}}
+</body>

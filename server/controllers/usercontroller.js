@@ -18,13 +18,14 @@ module.exports = function (app) {
             res.render('article-index', {user: user})
         });
     });
-// User update
-    app.put('/user', function (req, res) {
-        res.send('Got a PUT request at /user');
-    });
-// User Delete
-    app.delete('/user', function (req, res) {
-        res.send('Got a DELETE request at /user');
-    });
-
 };
+
+// // User update
+//     app.put('/user', function (req, res) {
+//         res.send('Got a PUT request at /user');
+//     });
+// // User Delete
+//     app.delete('/user', function (req, res) {
+//         res.send('Got a DELETE request at /user');
+//     });
+//

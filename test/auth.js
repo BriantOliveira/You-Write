@@ -11,7 +11,7 @@ var User = require('../models/user');
 describe('User', function() {
 });
 
-it('should no be able to login, if user don`t have an account', function (done) {
+it('should no be able to login if user don`t have an account', function (done) {
     agent
         .post('/login', { email: "error@wrong.com", password: "fail" })
         .end(function (err, res){
