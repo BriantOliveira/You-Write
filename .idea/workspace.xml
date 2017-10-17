@@ -67,12 +67,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/app.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="419">
                   <caret line="153" column="3" lean-forward="false" selection-start-line="153" selection-start-column="3" selection-end-line="153" selection-end-column="3" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+                  <folding>
+                    <marker date="1508121113000" expanded="true" signature="671:838" ph="{&quot;babel-cli&quot;: &quot;^6.22.2&quot;...}" />
+                    <marker date="1508121113000" expanded="true" signature="1148:1419" ph="{&quot;bcrypt&quot;: &quot;^1.0.3&quot;...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -374,12 +387,12 @@
       <updated>1507738928929</updated>
       <workItem from="1507738930817" duration="27723000" />
       <workItem from="1508011683933" duration="834000" />
-      <workItem from="1508019142338" duration="82442000" />
+      <workItem from="1508019142338" duration="82789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110999000" />
+    <option name="totallyTimeSpent" value="111346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,17 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <marker date="1508121113000" expanded="true" signature="671:838" ph="{&quot;babel-cli&quot;: &quot;^6.22.2&quot;...}" />
-            <marker date="1508121113000" expanded="true" signature="1148:1419" ph="{&quot;bcrypt&quot;: &quot;^1.0.3&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -818,6 +820,17 @@
         <state relative-caret-position="419">
           <caret line="153" column="3" lean-forward="false" selection-start-line="153" selection-start-column="3" selection-end-line="153" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <marker date="1508121113000" expanded="true" signature="671:838" ph="{&quot;babel-cli&quot;: &quot;^6.22.2&quot;...}" />
+            <marker date="1508121113000" expanded="true" signature="1148:1419" ph="{&quot;bcrypt&quot;: &quot;^1.0.3&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
