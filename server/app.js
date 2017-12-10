@@ -102,11 +102,6 @@ app.post('/login/now', function(req, res, next) {
 });
 
 
-// NOT FOUND PAGE
-// app.get('/error', (req, res)=>{
-//     res.render('error-page')
-// });
-
 //Auth Routes
     require('./controllers/auth')(app);
 
@@ -119,36 +114,8 @@ app.post('/login/now', function(req, res, next) {
 // Comment Routes
     require('./controllers/commentController')(app);
 
-// app.get('/', function(req, res, next) {
-//
-//     /* ... */
-//
-//     //Author search
-//     if(req.query.author !== undefined) {
-//         /* ... */
-//         if(authorsPosts.length===0) {
-//             res.render(/*...*/);
-//         } else {
-//             res.render(/*...*/);
-//         }
-//         /* ... */
-//     }
-//     //Tag search
-//     else if(req.query.filter !== undefined) {
-//         /* ... */
-//         if(taggedPosts.length===0) {
-//             res.render(/*...*/);
-//         } else {
-//             res.render(/*...*/);
-//         }
-//         /* ... */
-//     }
-//     //or just latest
-//     else {
-//         res.render(/*...*/);
-//     }
-// });
 
-server.listen(port, function() {
+
+app.listen(port, function() {
     console.log("App is running on port " + port);
 });
